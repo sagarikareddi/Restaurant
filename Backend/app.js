@@ -11,7 +11,7 @@ dotenv.config({ path: "./config.env" });
 let FRONTEND_URL = "https://celebrated-beignet-af47a8.netlify.app/"
 app.use(
   cors({
-    origin: [FRONTEND_URL],
+    origin: FRONTEND_URL,
     methods: ["POST"],
     credentials: true,
   })
