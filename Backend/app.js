@@ -6,12 +6,10 @@ import reservationRouter from "./routes/reservationRoute.js";
 import { dbConnection } from "./database/dbConnection.js";
 
 const app = express();
-// origin: [process.env.FRONTEND_URL],
 dotenv.config({ path: "./config.env" });
-let FRONTEND_URL = "https://celebrated-beignet-af47a8.netlify.app/"
 app.use(
   cors({
-    origin: ["https://celebrated-beignet-af47a8.netlify.app"],
+    origin: ["https://famous-pothos-cf7ee4.netlify.app"],
     methods: ["POST"],
     credentials: true,
   })
