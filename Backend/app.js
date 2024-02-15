@@ -8,7 +8,7 @@ import { dbConnection } from "./database/dbConnection.js";
 const app = express();
 // origin: [process.env.FRONTEND_URL],
 dotenv.config({ path: "./config.env" });
-let FRONTEND_URL = "http://localhost:5173"
+let FRONTEND_URL = "https://celebrated-beignet-af47a8.netlify.app/"
 app.use(
   cors({
     origin: [FRONTEND_URL],
