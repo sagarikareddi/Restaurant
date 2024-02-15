@@ -9,7 +9,7 @@ const app = express();
 dotenv.config({ path: "./config.env" });
 app.use(
   cors({
-    origin: ["https://famous-pothos-cf7ee4.netlify.app"],
+    origin: ["https://friendly-axolotl-392b71.netlify.app"],
     methods: ["POST"],
     credentials: true,
   })
